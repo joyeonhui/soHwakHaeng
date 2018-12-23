@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<script type="text/javascript" src="canvas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.12/paper.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="canvas.css">
+    <script language="javascript">
+    function showPopup1(){window.open("", "", "width=600, height=800, left=100, top=50");}
+    </script>
+
+    <style type="text/css">
+    canvas {
+     border: 1px solid #000;
+     background: -webkit-linear-gradient(top, #febbbb 0%,#fe9090 45%,#ff5c5c 100%);
+     overflow : hidden;
+    }
+    </style>
+
+    <script type="text/paperscript" canvas="myCanvas">
+    var layers = {
+    "backbackground" : new Layer(),
+    "background": new Layer(),
+    "foreground": new Layer(),
+    "clearBtn": new Layer()
+    };
+
+    var paths = [];
+    //erase function
+    function onMouseDown(event) {
+     layers.foreground.activate();
+     path = new paper.Path();
+     path.strokeColor = 'red';
+     path.strokeWidth = 7;
+     path.strokeCap = 'round';
+     path.blendMode = 'destination-out';
+     path.fillStyle = 'red';
+     paths.push(path);
+    }
+
+    function onMouseDrag(event) {
+     layers.foreground.activate();
+     path.add(event.point);
+
+    }
+    //setup background image
+    layers.background.activate();
+    var bgimage = "images/Normal/hair.jpg";
+    var raster = new paper.Raster({
+     source: bgimage,
+     position: paper.view.center
+    });
+
+    // Build a "clear button"
+    // Clicking this will remove all children
+    // from the foreground layer
+    layers.clearBtn.activate();
+    var clearBtn = new Path.Rectangle({
+    point: new Point(1330, 2),
+    size: new Size(70, 30),
+    style: {
+     fillColor: 'white',
+     strokeColor: 'black'
+    }
+    });
+
+    var txt = new PointText({
+    point: clearBtn.position + new Point(0,4),
+    content: 'Clear',
+    justification: 'center'
+    });
+
+    var clearBtnGrp = new Group({
+    children: [clearBtn, txt]
+    });
+
+    clearBtnGrp.on('mousedown', function() {
+    for (var i = 0; i < paths.length; i++) {
+     paths[i].remove();
+    }
+    });
+
+    </script>
+</head>
+<body>
+  <header>
+    <a id="logo" href="main.html">
+      <img src="images/Logo.jpg" width="150px">
+    </a>
+    <ul class="menu">
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="sumo.html">Sumo</a></li>
+    </ul>
+  </header>
+
+  <section class="banner">
+    <h1 class="banner_name">
+      Scratch
+    </h1>
+  </section>
+
+  <div class="menu2">
+    <ul>
+      <li><a href="Easy.html">Hair</a></li>
+    </ul>
+    <button type="button" class="btn_saveimg" href="" onclick=""/>SAVE</button>
+  </div>
+
+  <section class="main">
+    <center>
+    <canvas id="myCanvas" width="1400" height="1700"></canvas>
+  </center>
+</section>
+</body>
+</html>

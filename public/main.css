@@ -1,0 +1,308 @@
+@charset "utf-8";
+
+@font-face{
+  font-family: 'NanumSquareR';
+  src: url('fonts/NanumSquareR.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'NanumSquareEB';
+  src: url('fonts/NanumSquareEB.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'Binggrae-Bold';
+  src: url('fonts/Binggrae-Bold.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'Binggrae';
+  src: url('fonts/Binggrae.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'BinggraeTaom';
+  src: url('fonts/BinggraeTaom.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'BinggraeTaom-Bold';
+  src: url('fonts/BinggraeTaom-Bold.ttf') format('truetype');
+}
+/* body header appheader */
+.appheader {
+    position: relative;
+    height: 80px;
+    background-color: #FFFFFF;
+}
+
+.top-banner {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+#logo{
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.btn_signup{
+  position: absolute;
+  height: 40px;
+  width: 80px;
+  background-color: #FFFFFF;
+  font-family: Binggrae;
+  color: #ff7a00;
+  font-size: 13px;
+  right: 120px;
+  top: 20px;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #ff7a00;
+  cursor:pointer;
+}
+.btn_signup:hover {
+    background-color: #ff7a00;
+    color: #FFFFFF;
+}
+.btn_login {
+    position: absolute;
+    height: 40px;
+    width: 80px;
+    background-color: #FFFFFF;
+    font-family: Binggrae;
+    color: #ff7a00;
+    font-size: 13px;
+    right: 20px;
+    top: 20px;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ff7a00;
+    cursor:pointer;
+}
+
+.btn_login:hover {
+    background-color: #ff7a00;
+    color: #FFFFFF;
+}
+
+/* body header top-banner */
+.menu ul li{
+    position: relative;
+    z-index: 2;
+}
+
+.sub-list ul {
+    display: none;
+    position: absolute;
+    z-index: -1;
+    background-color: #FFFFFF;
+}
+
+.sub-list ul li {
+    display: block;
+    background-color: #FFFFFF;
+    color: #ff7a00;
+}
+
+.banner1 {
+    margin-left: 370px;
+}
+
+.banner1 ul ul {
+    position: absolute;
+    display: none;
+
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.banner1 ul ul li {
+    display: block;
+    color: black;
+    font-size: 15px;
+    font-family: Binggrae-Bold;
+}
+
+.banner1 ul {
+    position: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.banner1 ul li {
+   display: inline-block;
+   width: 100px;
+   font-size: 15px;
+   font-family: Binggrae-Bold;
+ }
+
+.banner1 ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    line-height: 50px;
+    background-color: #FFFFFF;
+}
+
+.banner1 li a:hover {
+    color: #ff7a00;
+}
+
+.jbFixed {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+/* body section carousel */
+body{
+    margin: 0px;
+}
+#carousel_section{
+    background-color: gray;
+}
+#carousel_section > ul{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 400PX;
+    position: relative;
+    overflow: hidden;
+}
+#carousel_section > ul > li{
+    list-style: none;
+    width: 100%;
+    height: 400PX;
+    position: absolute;
+}
+#carousel_section > ul > li >img{
+    list-style: none;
+    width: 100%;
+    height: 400PX;
+    object-fit: cover;
+}
+
+/* body section bottom-content */
+
+/*section 1*/
+
+#section1 {
+    height: 330px;
+    padding: 80px 0px 30px 270px;
+}
+
+#section1-img {
+    float: left;
+    margin-right: 50px;
+    margin-left : 300px;
+    vertical-align: middle;
+}
+
+#info {
+     vertical-align: middle
+     text-align: center;
+
+}
+
+#title {
+    position: relative;
+    color: #ff7a00;
+    padding-top: 23px;
+    font-size: 40px;
+    font-family: BinggraeTaom-Bold;
+}
+
+#intro {
+    margin-bottom: 20px;
+    padding-top: 30px;
+    font-size: 18px;
+    font-family: BinggraeTaom;
+}
+
+/* section2 */
+#section2 {
+    /*
+    background-image: url("images/back-img.jpg");
+    background-size: cover;
+    */
+    height: 1000px;
+}
+
+/* section3 */
+#section3 {
+    height: 500px;
+}
+
+.polaroid {
+    display: inline-block;
+    background:#000; /*Change this to a background image or remove*/
+    border:solid #fff;
+    margin: 5px;
+    border-width:6px 6px 20px 6px;
+    box-shadow:1px 1px 5px #333; /* Standard blur at 5px. Increase for more depth */
+    -webkit-box-shadow:1px 1px 5px #333;
+    -moz-box-shadow:1px 1px 5px #333;
+    height: auto;
+    width: 200px;
+}
+
+/* section3 img effect
+.effect {
+    display: inline-block;
+    position: relative;
+    overflow: hidden; /* 불필요한 부분 가리기
+    padding: 6px; /* 6px정도 이미지 밖으로 표현
+}
+
+.effect img {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.effect:before,
+.effect:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 97px;
+    height: 50px;
+    background: #fff; /* 배경색과 같은 색
+    transform: rotate(-30deg);
+}
+
+/* 왼쪽 위
+.effect:before {
+    box-shadow: 0 10px 8px -12px rgba(0, 0, 0, 0.8);
+    top: -24px;
+    bottom: auto;
+    right: auto;
+    left: -26px;
+
+}
+
+/* 오른쪽 아래
+.effect:after {
+    box-shadow: 0 -10px 10px -10px rgba(0, 0, 0, 0.7);
+    top: auto;
+    bottom: -22px;
+    right: -25px;
+    left: auto;
+}
+
+*/
+
+/* section4 */
+#section4 {
+    position: relative;
+    display: block;
+    background-color: #333;
+    color: #FFFFFF;
+    height: 70px;
+    margin: 0px;
+    padding-top: 5px;
+    font-family: BinggraeTaom-Bold;
+}
+.easy{
+  margin-left: 400px;
+  margin-top: 30px;
+}

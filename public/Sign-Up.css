@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+.appheader {
+    position: relative;
+    height: 80px;
+    background-color: #FFFFFF;
+}
+
+#join {
+	margin: auto;
+	text-align: center;
+	width: 500px;
+	border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    vertical-align: middle;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#content input {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button input {
+	height: 40px;
+    width: 80px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    color: #ff7a00;
+    font-size: 16px;
+    right: 20px;
+    top: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    border-width: 0px;
+    border: 1px solid #ff7a00;
+}
+.button input:hover {
+    background-color: #ff7a00;
+    color: #FFFFFF;
+}
+
+#footer {
+	height: 80px;
+	padding: 20px;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="main.css" type="text/css">
+	<title>소확행</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script language="javascript">
+		function showPopup1(){
+			window.open("Sign-Up.html", "회원가입", "width=600, height=800, left=100, top=50");
+		}
+		function showPopup2(){
+			window.open("login.html", "로그인", "width=400, height=400, left=100, top=50");
+		}
+	</script>
+</head>
+<body>
+	<!-- top-banner -->
+	<header>
+		<nav class="top-banner" id="top-banner">
+			<div class="appheader" id="appheader">
+				<!-- $div 추가 -->
+				<div class="sec_logo">
+					<a id="logo" href="main.html">
+						<img src="images/Logo.jpg" width="140px">
+					</a>
+				</div>
+				<!-- $줄바꿈 -->
+				<center>
+				<div class="banner1" id="navBanner1">
+					<ul class="menu">
+						<li><a href="#appheader" class="dot">Home</a></li>
+						<li><a href="#section1" class="dot">Intro</a></li>
+						<li><a href="Easy.html" class="dot">Level</a>
+							<ul class="sub-list">
+								<li><a href="Easy.html">Easy</a></li>
+								<li><a href="Normal.html">Normal</a></li>
+								<li><a href="Hard.html">Hard</a></li>
+							</ul>
+						</li>
+						<li><a href="gallery.html" class="dot">Gallery</a></li>
+						<li><a href="sumo.html" class="dot">Sumo</a></li>
+					</ul>
+				</div>
+				</center>
+				<!-- $div 추가 -->
+				<div class="sec_btn">
+					<button type="button" class="btn_login" href="login.html" onclick="showPopup2();"/>LOGIN</button>
+					<button type="button" class="btn_signup" href="Sign-Up.html"  onclick="showPopup1();"/>SIGN IN</button>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Carousel -->
+  <section class="Slider">
+		<div id="carousel_section">
+        <ul>
+            <li> <img src="images/slide1.jpg"> </li>
+            <li> <img src="images/slide2.jpg"> </li>
+            <li> <img src="images/slide3.jpg"> </li>
+            <li> <img src="images/slide4.jpg"> </li>
+        </ul>
+    </div>
+	</section>
+
+		<!-- bottom-content -->
+	<section class="content" id="content">
+		<div id="section1" class="container-fluid">
+			<center>
+			<div id="section1-img">
+				<img src="images/about1.png" width="250">
+			</div>
+			</center>
+			<div id="info">
+				<div id="title">
+					소소하지만 확실한 행복
+				</div>
+				<div id="intro">
+			  	일상에서 느낄 수 있는 작지만 확실하게 실현 가능한 행복으로 <br />
+			  	검은 바탕에 흰 선으로 스케치가 되어있는 종이에 <br />
+			  	스케치를 따라서 종이를 펜으로 긁어내면 색깔이 나오면서 <br />
+			  	그림이 완성되는 취미활동이 있습니다.
+			  	<br /><br />
+			  	이것을 종이가 아닌 웹애플리케이션으로 구현해 사람들이 그림을<br />
+			  	구입하지 않고 다양한 디자인의 그림들을 완성시켜<br />
+			  	사람들의 소소한 취미활동을 통해<br />
+			  	확실한 행복을 느끼는 소확행을 실현하려고 합니다.<br />
+
+			  </div>
+			</div>
+
+			<!--
+			  <div id="section1-img">
+			  	<img src="images/about1.png" width="250">
+			  </div>
+			  <div id="title">
+			  	<center>소확행</center>
+			  </div>
+			  <div id="intro">
+
+			  		소소하지만 확실한 행복
+			  		<br />
+			  		일상에서 느낄 수 있는 작지만 확실하게 실현 가능한 행복
+
+			  </div>
+			-->
+		</div>
+
+		<div id="section2" class="container-fluid">
+			<div class="easy"><img src="images/easy.jpg" width="1000" height="300"></div>
+			<div class="easy"><img src="images/normal.jpg" width="1000" height="300"></div>
+			<div class="easy"><img src="images/hard.jpg" width="1000" height="300"></div>
+		</div>
+
+		<div id="section3" class="container-fluid">
+			<center>
+			  <div class="polaroid"><img src="sketch/bear.png" width="200" height="200"></div>
+			  <div class="polaroid"><img src="sketch/boy.png" width="200" height="200"></div>
+			  <div class="polaroid"><img src="sketch/friend.png" width="200" height="200"></div>
+			  <div class="polaroid"><img src="sketch/flower.png" width="200" height="200"></div>
+			  <div class="polaroid"><img src="sketch/matilda.png" width="200" height="200"></div>
+			  <div class="polaroid"><img src="sketch/cat.jpg" width="200" height="200"></div>
+			  <div class="polaroid"><img src="sketch/hand.jpg" width="200" height="200"></div>
+			  <div class="polaroid"><img src="sketch/horse.png" width="200" height="200"></div>
+			  <div class="polaroid"><img src="sketch/indian.jpg" width="200" height="200"></div>
+			  <div class="polaroid"><img src="sketch/umbrella.jpg" width="200" height="200"></div>
+		  </center>
+		</div>
+
+		<div id="section4" class="container-fluid">
+			<center>
+		  	<h1>COPYRIGHT 2018 SOHWAKHENG</h1>
+		  </center>
+		</div>
+	</section>
+
+	<!-- script -->
+
+	<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
